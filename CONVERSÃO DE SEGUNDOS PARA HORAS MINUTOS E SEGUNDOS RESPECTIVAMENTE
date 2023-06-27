@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main (){
+   system ("color f0");
+   int h, m, s, resultado;
+   cout << "\n\nDigite o valor das horas: ";
+   cin >> h;
+   cout << "\n\nDigite o valor dos minutos: ";
+   cin >> m;
+   cout << "\n\nDigite o valor dos segundos: ";
+   cin >> s;
+    resultado = h*3600 + m*60 + s*1;
+     cout << " \n\nResultado = " << resultado;
+
+     cout<< " \n\nFim do Programa!\n ";
+
+
+     "\n\nreturn 0";
+}
