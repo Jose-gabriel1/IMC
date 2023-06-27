@@ -1,0 +1,35 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+
+int main() {
+
+
+    system ("color f4");
+    int n1, q, i, par = 0, impar = 0, z = 0;
+    cout << "informe a quantidade de numeros: ";
+    cin >> q;
+
+
+    for ( i=1; i <=q; i++){
+
+     cout << "Informe o " << i << " numero: ";
+     cin >> n1;
+
+
+    if ( n1 % 2 == 0 ){
+        if (n1 == 0){
+          z++;
+    }
+    else {
+        par++;
+    }
+}
+   else {
+    impar++;
+   }
+    }
+    cout << "pares" << " " << par++ << endl;
+    cout << "impares" << " " << impar++ << endl;
+    cout << "neutros" << " " <<1 z++ << endl;
+}
