@@ -1,0 +1,99 @@
+#include<iostream>
+#include<cmath>
+#include <string>
+using namespace std;
+
+bool in_range(double value, double min, double max){
+           return ( value >= min && value <= max);
+}
+
+int main() {
+
+    system ("color 5");
+    float peso, altura, sexo, imc;
+    double pesoIdeal, imcIdeal, diferencaPeso;
+    string nome;
+
+
+    cout << "\nDigite seu nome: ";
+    getline(cin, nome);
+    cout << "\nDigite seu peso: ";
+    cin >> peso;
+    cout << "\nDigite sua altura: ";
+    cin >> altura;
+    cout << "\nDigite o seu sexo (DIGITE 1 PARA FEMININO E 2 PARA MASCULINO):  ";
+    cin >> sexo;
+
+    imc = peso / pow(altura , 2);
+    pesoIdeal = in_range(imc, 18.5, 24.9) * ( altura * altura );
+    diferencaPeso = peso - pesoIdeal;
+
+    cout << "\n" << nome << " " << "seu IMC eh: " << imc << endl;
+
+
+      if ( sexo == 1 ){
+
+            if ( imc < 18.5){
+                cout << " \nvoce esta no nivel magreza";
+            }
+
+            if ( imc >= 18.5 && imc <= 23.9) {
+
+              cout << " \nvoce esta no nivel normal";
+            }
+
+            if ( imc >= 24 && imc <= 28.9) {
+
+              cout << " \nvoce esta no nivel sobrepeso" << " para atingir o IMc ideal voce precisa perder" << diferencaPeso << " kg ";
+            }
+
+            if ( imc >= 29 && imc <= 34.9) {
+
+              cout << " \nvoce esta no nivel obesidade grau 1" << " para atingir o IMc ideal voce precisa perder" << diferencaPeso<< " kg ";
+            }
+
+            if ( imc >= 35 && imc <= 39.9) {
+
+              cout << " \nvoce esta no nivel obesidade grau 2" << " para atingir o IMc ideal voce precisa perder" << diferencaPeso << " kg ";
+            }
+
+            if ( imc > 40) {
+
+              cout << " \nvoce esta no nivel obesidade grau 3" << " para atingir o IMc ideal voce precisa perder" <<  " " << diferencaPeso << " kg ";
+            }
+      }
+
+      else{
+     if ( sexo == 2 ){
+
+            if ( imc < 18.5){
+                cout << " \nvoce esta no nivel de magreza";
+            }
+
+            if ( imc >= 18.5 && imc <= 24.9) {
+
+              cout << " \nvoce esta no nivel normal";
+            }
+
+            if ( imc >= 25 && imc <= 29.9) {
+
+              cout << " \nvoce esta no nivel sobrepeso" << " para atingir o IMc ideal voce precisa perder" << diferencaPeso << " kg ";
+            }
+
+            if ( imc >= 30 && imc <= 34.9) {
+
+              cout << " \nvoce esta no nivel obesidade grau 1" << " para atingir o IMc ideal voce precisa perder" << diferencaPeso << " kg ";
+            }
+
+            if ( imc >= 35 && imc <= 39.9) {
+
+              cout << " \nvoce esta no nivel obesidade grau 2" << " para atingir o IMc ideal voce precisa perder" << diferencaPeso << " kg ";
+            }
+
+            if ( imc > 40) {
+
+              cout << " \nvoce esta no nivel obesidade grau 3" << " para atingir o IMc ideal voce precisa perder" << diferencaPeso << " kg ";
+            }
+      }
+   }
+}
