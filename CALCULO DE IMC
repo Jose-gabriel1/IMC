@@ -1,13 +1,17 @@
 #include<iostream>
 #include<cmath>
+#include <string>
 using namespace std;
 
 int main() {
 
-    system ("color f0");
+    system ("color 5");
     float peso, altura, sexo, imc;
+    string nome;
 
 
+    cout << "\nDigite seu nome: ";
+    getline(cin, nome);
     cout << "\nDigite seu peso: ";
     cin >> peso;
     cout << "\nDigite sua altura: ";
@@ -17,38 +21,38 @@ int main() {
 
     imc = peso / pow(altura , 2);
 
-    cout << "\nSeu IMC eh: " << imc << endl;
+    cout << "\n" << nome << " " << "seu IMC eh: " << imc << endl;
 
 
       if ( sexo == 1 ){
 
             if ( imc < 18.5){
-                cout << "magreza";
+                cout << " \nvoce esta no nivel magreza";
             }
 
             if ( imc >= 18.5 && imc <= 23.9) {
 
-              cout << "normal";
+              cout << " \nvoce esta no nivel normal";
             }
 
             if ( imc >= 24 && imc <= 28.9) {
 
-              cout << "sobrepeso";
+              cout << " \nvoce esta no nivel sobrepeso";
             }
 
             if ( imc >= 29 && imc <= 34.9) {
 
-              cout << "obesidade grau 1";
+              cout << " \nvoce esta no nivel obesidade grau 1";
             }
 
             if ( imc >= 35 && imc <= 39.9) {
 
-              cout << "obesidade grau 2";
+              cout << " \nvoce esta no nivel obesidade grau 2";
             }
 
             if ( imc > 40) {
 
-              cout << "obesidade grau 3";
+              cout << " \nvoce esta no nivel obesidade grau 3";
             }
       }
 
@@ -56,38 +60,34 @@ int main() {
      if ( sexo == 2 ){
 
             if ( imc < 18.5){
-                cout << "magreza";
+                cout << " \nvoce esta no nivel de magreza";
             }
 
             if ( imc >= 18.5 && imc <= 24.9) {
 
-              cout << "normal";
+              cout << " \nvoce esta no nivel normal";
             }
 
             if ( imc >= 25 && imc <= 29.9) {
 
-              cout << "sobrepeso";
+              cout << " \nvoce esta no nivel sobrepeso";
             }
 
             if ( imc >= 30 && imc <= 34.9) {
 
-              cout << "obesidade grau 1";
+              cout << " \nvoce esta no nivel obesidade grau 1";
             }
 
             if ( imc >= 35 && imc <= 39.9) {
 
-              cout << "obesidade grau 2";
+              cout << " \nvoce esta no nivel obesidade grau 2";
             }
 
             if ( imc > 40) {
 
-              cout << "obesidade grau 3";
+              cout << " \nvoce esta no nivel obesidade grau 3";
             }
       }
-      }
-
-
-
-
+   }
 
 }
