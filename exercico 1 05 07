@@ -1,0 +1,57 @@
+#include <iostream>
+#include <locale.h>
+#include <unistd.h>
+
+using namespace std;
+
+
+int main () {
+    setlocale(LC_ALL, "Portuguese") ;
+    system ("color 3");
+   int i, soma = 0, soma1;
+
+   cout << "i\tsoma\n";
+
+   for ( i=12; i<= 54; i=i+3) {
+
+            soma = soma + i;
+            cout << i << "\t" << soma << "\n";
+    }
+
+    soma1 += soma;
+    cout << "o somatorio de todos os números é= " << soma1 << endl;
+
+    return 0;
+
+}
+
+
+
+
+
+//#include <iostream>
+//#include <locale.h>
+//#include <unistd.h>
+
+//using namespace std;
+
+
+//int main () {
+//    setlocale(LC_ALL, "Portuguese") ;
+//   system ("color 3");
+//   int i, soma = 0, soma1;
+
+//   cout << "i\tsoma\n";
+
+//   for ( i=11; i<= 55; i++) {
+//          if (i%3 == 0){
+//            soma = soma + i;
+//            cout << i << "\t" << soma << "\n";
+//      }     
+//   }
+
+//    soma1 += soma;
+//    cout << "o somatorio de todos os números é= " << soma1 << endl;
+//  return 0;
+
+//}
