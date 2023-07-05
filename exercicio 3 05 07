@@ -1,0 +1,35 @@
+#include <iostream>
+#include <locale.h>
+#include <unistd.h>
+#include <cstdlib>
+#include <cmath>
+#include <ctime>
+
+using namespace std;
+
+
+int main () {
+    srand (time(0));
+    system ("color 3");
+
+
+    int i, soma = 0, n;
+
+    cout << "i\tsoma\n";
+
+    for ( i=1; i <= 10; i++) {
+
+          n = 11 + rand()%45;
+
+            if( n%3 == 0){
+            soma = soma + n;
+            }
+
+
+            cout << i << "\t" << n << "\t" << soma << "\n";
+    }
+
+
+    return 0;
+
+}
