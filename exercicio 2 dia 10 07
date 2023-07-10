@@ -1,0 +1,29 @@
+#include <iostream>
+#include <locale.h>
+#include <unistd.h>
+#include <cstdlib>
+#include <cmath>
+#include <ctime>
+using namespace std;
+
+int main () {
+
+         setlocale(LC_ALL, "Portuguese");
+         system ("color 4");
+
+         int i = 0 , n, fatorial = 1;
+
+
+         cout << "Digite um número inteiro no intervalo de 0 até 9 " << endl;
+         cin >> n;
+
+
+         for ( i = 1; i <= n; i++){
+
+            fatorial  *= i;
+
+         }
+         cout << fatorial << endl;
+
+  return 0;
+}
