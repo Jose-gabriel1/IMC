@@ -1,0 +1,28 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+#include <locale.h>
+using namespace std;
+
+int main() {
+
+    system("color a");
+    setlocale(LC_ALL, "Portuguese");
+    srand(time(0)); // inicializa o gerador de números aleatórios
+    int i = 0, n, x=0;
+    while (i <=n) {
+        n = rand() % 10; // gera um número aleatório entre 0 e 9
+        cout << n << " ";
+        if (n == 5) {
+            i++;
+        } else {
+            i = 0;
+        }
+        if (i == 4) {
+            break;
+        }
+        x++;
+    }
+    cout << endl << "o número de interações é : " << x << endl;
+    return 0;
+}
