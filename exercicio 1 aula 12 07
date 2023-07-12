@@ -1,0 +1,28 @@
+#include <iostream>
+#include <ctime>
+#include <cstdlib>
+#include <locale.h>
+using namespace std;
+
+int main () {
+
+    setlocale(LC_ALL,"Portuguese");
+    srand(time(0));
+    system ("color 2");
+
+    int i=11, n, x = 0;
+
+  for(i=11; i <= 44; i++) {
+
+    n = 11+rand()%34;
+    cout << n << "\n";
+    if(n == 25){
+        x++;
+    }
+
+   }
+   cout << "o número 25 aparece " << x << " vez(es) " << endl;
+
+   return 0;
+
+}
