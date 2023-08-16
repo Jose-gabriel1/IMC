@@ -1,0 +1,37 @@
+//ex. 3((questao 2 + verificar se ocorre letras iguais nas linhas)
+/*
+#include <iostream>
+#include <ctime>
+#include <cstdlib>
+using namespace std;
+
+int main(){
+    system("color a");
+    srand(time(0));
+
+    int i, j;
+    float a[10][10];
+    char c[10][10];
+
+    for(i=0;i<10;i++){
+        for(j=0;j<10;j++){
+            a[i][j] = 65 + rand()%26;
+            c[i][j] = (char)a[i][j];
+
+
+
+            cout << " " << c[i][j] ;
+            if(j>0){
+                if(c[i][j] == c[i][j-1]){
+                    cout << "#";
+                }
+            }
+
+        }
+        cout<< endl;
+    }
+
+
+    return 0;
+}
+*/
