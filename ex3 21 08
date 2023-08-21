@@ -1,0 +1,38 @@
+//ex3(modificar o 1 bucando a palavra "oi" nas colunas)
+/*
+#include <iostream>
+#include <ctime>
+#include <cstdlib>
+using namespace std;
+
+int main(){
+    system("color a");
+    srand(time(0));
+
+    int i, j;
+    char a[10][10];
+
+    for(i=0;i<10;i++){
+        for(j=0;j<10;j++){
+            a[i][j] = 73 + rand()%8;
+            cout<< a[i][j] << "  ";
+        }
+        cout << endl;
+    }
+
+    cout << endl;
+
+    for(i=0;i<10;i++){
+        for(j=0;j<10;j++){
+            if(i>0 &&  (a[i][j] == 'I' && a[i-1][j] == 'O')){
+                cout << "1 ";
+            } else {
+                cout<<"0 ";
+            }
+        }
+        cout<< endl;
+    }
+
+    return 0;
+}
+*/
