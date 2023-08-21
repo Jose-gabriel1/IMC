@@ -1,0 +1,36 @@
+//ex.1.b (matriz10x10 de letras converter p caracter)
+/*
+#include <iostream>
+#include <ctime>
+#include <cstdlib>
+using namespace std;
+
+int main(){
+    system("color a");
+    srand(time(0));
+
+    int i, j;
+    float a[10][10];
+    char c[10][10];
+
+    for(i=0;i<10;i++){
+        for(j=0;j<10;j++){
+            a[i][j] = 65 + rand()%26;
+            cout<< a[i][j] << "  ";
+        }
+      cout << endl;
+    }
+    cout<<endl;
+
+  for(i=0;i<10;i++){
+        for(j=0;j<10;j++){
+                c[i][j] = (char) a[i][j];
+            cout<< c[i][j] << "  ";
+        }
+      cout << endl;
+    }
+
+
+    return 0;
+}
+*/
