@@ -1,0 +1,14 @@
+#include <iostream>
+#include<locale.h>
+using namespace std;
+
+int main() {
+    setlocale(LC_ALL,"portuguese");
+    double somatorio = 0.0, fatorial = 1.0;
+    for (int i = 1; i <= 100; i++) {
+        fatorial *= i;
+        somatorio += 1.0 / fatorial;
+    }
+    cout << "O somatório é: " << somatorio << endl;
+    return 0;
+}
