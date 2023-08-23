@@ -1,0 +1,32 @@
+#include <iostream>
+#include <ctime>
+#include <cstdlib>
+#include <locale.h>
+using namespace std;
+
+int main () {
+
+    setlocale(LC_ALL,"Portuguese");
+    srand(time(0));
+    system ("color 2");
+
+    int i, frequencia[7] = {0};
+
+  for(i=1; i <= 6000; i++) {
+        cout << i << endl;
+        frequencia[1+rand()%6]++;
+
+
+
+   }
+   cout << "o número 1 aparece " << frequencia[1] << " vez(es) " << endl;
+   cout << "o número 2 aparece " << frequencia[2] << " vez(es) " << endl;
+   cout << "o número 3 aparece " << frequencia[3] << " vez(es) " << endl;
+   cout << "o número 4 aparece " << frequencia[4] << " vez(es) " << endl;
+   cout << "o número 5 aparece " << frequencia[5] << " vez(es) " << endl;
+   cout << "o número 6 aparece " << frequencia[6] << " vez(es) " << endl;
+
+
+   return 0;
+
+}
