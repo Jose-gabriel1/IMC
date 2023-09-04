@@ -1,0 +1,21 @@
+#include <iostream>
+#include <ctime>
+#include <cstdlib>
+using namespace std;
+
+int main(){
+    srand(time(0));
+
+    int a, p, m, c;
+    a = char(65+rand()%15);
+    p = char(65+rand()%15);
+    m = char(65+rand()%15);
+
+    while(!((a=='G')&&(p=='O')&&(m=='L'))){
+         c = char(65+rand()%15);
+         a = p;
+         p = m;
+         m = c;
+    }
+    cout<<a<<p<<m;
+}
