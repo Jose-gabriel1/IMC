@@ -1,0 +1,89 @@
+/*
+!exemplo 1!
+#include <iostream>
+using namespace std;
+
+int main (){
+
+     system("color 0");
+
+     int j, a[10] { 1, 2 ,3, 4, 5, 6, 7, 8, 9};
+     j = 0;
+     while(j< 9){
+        a[j] = a[j] + a[j]%2;
+        cout << j << "\t" << a[j] << endl;
+           j++;
+
+     }
+
+     return 0;
+}
+ !exemplo 2!
+#include <iostream>
+using namespace std;
+
+int main (){
+
+     system("color 0");
+
+     int i, j, a[3][3] { 1, 2 ,3, 4, 5, 6, 7, 8, 9};
+
+     for(i=0; i < 3; i++){
+        for(j=0; j < 3; j++){
+
+        cout << a[i][j] << " ";
+        }
+           cout << endl;
+     }
+
+     return 0;
+}
+
+#include <iostream>
+#include <ctime>
+#include <cstdlib>
+
+using namespace std ;
+
+int main () {
+    system ("color a");
+
+    srand(time(0));
+    int n, c=0;
+    while (c<5){
+
+        n = -10+rand()%20;
+        cout << n << "\t" ;
+        if(n==0){
+        c=c+1;
+        }
+
+    }
+
+        cout << "O numero zero apareceu 5 vezes!" << c ;
+
+  return 0;
+}
+*/
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+using namespace std;
+int main() {
+    srand(time(0));
+    int cont = 0,num;
+    int neg_count = 0;
+    for (int i = 0; i < 1000; i++) {
+        int num = -100 + rand() % 201 ;
+        cout << num << endl;
+        cont++;
+        if (num < 0) {
+            neg_count++;
+            if (neg_count == 100) {
+                break;
+            }
+        }
+    }
+    cout << "Total de números gerados: " << cont << std::endl;
+    return 0;
+}
