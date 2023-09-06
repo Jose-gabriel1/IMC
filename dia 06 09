@@ -1,0 +1,41 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main() {
+    int a1 = 1, q = 2, n = 100, i;
+    double term, soma = 0;
+
+    for (i = 0; i < n; i++) {
+         term = a1 * pow(q, i);
+         soma += term;
+         cout << term << " " ;
+    }
+    cout << soma << endl;
+    return 0;
+}
+
+
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+using namespace std;
+
+int main () {
+ system ("color a");
+    srand(time(0));
+    int n, i, cont7 = 0,  soma = 0;
+    for (i = 0; i < 70; i++) {
+        n = 11 + rand() % 89;
+        soma = n + soma;
+        cout << n << " ";
+        if ((i + 1) % 7 == 0) {
+            cout << endl;
+        }
+        if (n % 7 == 0) {
+            cont7++;
+        }
+    }
+    cout << "\n" <<"A soma dos numeros eh: " << soma << endl;
+    cout << "Multiplos de  7: " << cont7 << endl;
+    return 0;
+}
